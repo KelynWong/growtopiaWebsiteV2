@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Growtopia - Contact me</title>
+
+    <!-- Bootstrap linking -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons imported from fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Linking to my stylesheet -->
+    <link rel="stylesheet" href="gt_layout.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Images/Royal-lock-icon.ico" type="image/x-icon"/>
+
+    <script src="validateForm.js"></script>
+</head>
+<body>
+    <!-- My header is a picture -->
+    <header>
+        <img class="resize img-responsive" src="Images/growtopia-wallpapers-1 (1).jpg" alt="Growtopia">
+    </header>
+
+    <!-- Linking to all my internal/external links -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HowTo.html"><i class="fa fa-pencil fa-fw"></i>How to</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Recipe.html"><i class="fa fa-book fa-fw"></i>Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactMe.html"><i class="fa fa-fw fa-envelope"></i>Contact me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.growtopiagame.com" target="_blank"><i class="fa fa-shield fa-rotate-270"></i>Download</a>
+                </li>        
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Contact me</h1>
+    
+    <p>Feel free to contact me if you have any burning questions or
+         if you want to play growtopia with the most amazing player on growtopia :)</p>
+    <!-- All of my social media accounts -->
+    <div class="container-fluid">
+        <ul><img src="images/Gmail icon.png" height="16" width="16">Email: desperateforgoodmarks@gmail.com</ul>
+        <ul><img src="images/Phone icon.png" height="16" width="16"> Phone: 6389 2222</ul>
+        <ul><img src="images/Facebook icon.png" height="16" width="16"> Facebook: Legend27_gt</ul>
+        <ul><img src="images/Instagram icon.png" height="16" width="16"> Instagram: Legend27_gt</ul>
+        <ul><img src="images/Twitter icon.png" height="16" width="16"> Twitter: Legend27_gt</ul>
+        <ul><img src="images/World lock icon.gif" height="16" width="16"> Growtopia username: Legend27</ul>
+        <ul><img src="images/World lock icon.gif" height="16" width="16"> Growtopia worlds that I own (you are welcome to visit my worlds anytime):
+            Legendaryme, goodmarksplz, tipsandtricks and iamrich</ul>
+    </div>
+<br>
+<br>
+<br>
+<!-- Feedback form -->
+<section> 
+    <h1>Feedback form</h1>
+    <form name="myForm" action="thankyou.html" onsubmit="return validateForm()" method="POST">
+        <div class="formRow">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="name">Growtopia name</label>  
+                        <input name="userName" id="name" type="text" placeholder="Legend_27" class="form-control">
+                        <span id="gtName" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="worldName">World name</label>
+                        <input name="userWorldName" id="worldName" type="text" placeholder="IAmLegend" class="form-control">
+                        <span id="gtWorldName" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>   
+                <input name="userEmail" id="email" type="text" placeholder="LegendaryGuy@gmail.com" class="form-control">
+                <span id="gtEmail" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone no.</label>
+                <input name="userPhone" id="phone" type="text" placeholder="63892222" class="form-control">
+                <span id="gtPhone" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="level">What do you consider yourself as?</label>   
+                <select name="levelType" id="level" class="form-control">
+                    <option value="type1" selected>Beginner</option>
+                    <option value="type1">Average</option>
+                    <option value="type1">Pro</option>
+                </select>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="rangebox">Rate how useful my website is (0=not useful at all :( ; 10=AWESOME)</label> 
+                0
+                <input name="userExp" id="rangebox" type="range" class="form-control">
+                10
+            </div>  -->
+            <div class="form-group">
+            
+                    <label for="rangebox">Rate how useful my website is (0=not useful at all :( ; 10=AWESOME)</label> 
+                    <div class="input-group input-group-lg">
+                    
+                    0
+                    <input name="userExp" id="rangebox" type="range" class="form-control">
+                    10
+                    
+                </div> 
+            </div>
+            <div class="form-group">
+                <label for="commentBox">Comments</label>
+                <textarea name="comment" id="commentBox" cols="30" rows="5" class="form-control"></textarea>
+            </div>   
+
+            <!-- <div class="form-check">
+                <input type="checkbox" id="check" class="form-check-input">
+                <label for="check" class="form-check-label">I want to play with the legend</label>
+            </div> -->
+        <br>
+        </div>  
+        <div class="submitbutton">
+            <!-- <input type="submit" class="btn btn-outline-success" value="Submit my feedback :)"> -->
+            <input class="btn btn-success" type="submit" value="Submit feedback :)">
+        </div>  
+    </form>
+</section>
+
+    <footer>
+        Copyright &copy; 2019. Kelyn Wong's website. All rights reserved.
+        <br>
+        <a id="socialmedia" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a id="socialmedia" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a id="socialmedia" href="https://twitter.com/" target="_blank">Twitter</a>
+    </footer>
+
+    <div style="margin-top: 100px"></div>
+
+    <!-- Bootstrap 4 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
